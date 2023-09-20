@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR code à partir d'un formulaire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>QR code à partir d'un formulaire</h1>
+    </header>
+    <main class="main__content">
+      <section class="form__qr-code">
+        <form action="">
+          <div class="input__box">
+            <label for="firstname" class="title__label">Prénom</label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              class="form__control"
+              required
+            />
+            <p id="firstNameErrorMsg"><!-- ci est un message d'erreur --></p>
+          </div>
+
+          <div class="input__box">
+            <label for="lastname" class="title__label">Nom</label>
+            <input
+              type="text"
+              id="lastname"
+              name="name"
+              class="form__control"
+              required
+            />
+            <p id="lastNameErrorMsg"><!-- ci est un message d'erreur --></p>
+          </div>
+
+          <div class="input__box">
+            <label for="phone" class="title__label">Téléphone</label>
+            <input
+              type="tel"
+              id="phone"
+              class="form__control"
+              name="phone"
+              required
+            />
+            <p id="phoneNumberErrorMsg"><!-- ci est un message d'erreur --></p>
+          </div>
+
+          <div class="input__box">
+            <label for="email" class="title__label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form__control"
+              required
+            />
+            <p id="emailErrorMsg"><!-- ci est un message d'erreur --></p>
+          </div>
+          <button type="submit" class="submit__btn">Soumettre</button>
+        </form>
+
+        <article class="qr__code">
+          <img class="qrious" />
+          <div class="information">
+            <p class="value">Valeur :</p>
+            <p>Ici la valeur du code qr</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <span>Site créé par aperbet56</span>
+    </footer>
+    <script src="qrious.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
