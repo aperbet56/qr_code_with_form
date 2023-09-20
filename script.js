@@ -130,5 +130,5 @@ const submit = () => {
     valueMessage.textContent = qr.value;
   });
 };
-
+// Appel de la fonction submit
 submit();
