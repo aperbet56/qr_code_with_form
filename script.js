@@ -5,6 +5,7 @@ const phoneNumber = document.querySelector("#phone");
 const email = document.querySelector("#email");
 const submitBtn = document.querySelector(".submit__btn");
 const valueMessage = document.querySelector(".information").children[1];
+const resetBtn = document.querySelector(".reset__btn");
 
 // création de variables
 let qrCodeValue;
@@ -128,7 +129,20 @@ const submit = () => {
     console.log(qrCodeValue);
     qr.value = qrCodeValue;
     valueMessage.textContent = qr.value;
+    resetBtn.style.display = "block";
   });
 };
 // Appel de la fonction submit
 submit();
+
+// Déclaration de la fonction resetFormAndQr permettant une remise à zéro des inputs et du QR code
+const resetFormAndQr = () => {
+  window.location.reload();
+  firstName.value = "";
+  lastName.value = "";
+  phoneNumber.value = "";
+  email.value = "";
+};
+
+// Eoute de l'événement "click" sur le bouton "Reset" et appel de la fonction resetFormQr
+resetBtn.addEventListener("click", resetFormAndQr);
