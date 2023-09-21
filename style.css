@@ -126,6 +126,26 @@ input:focus {
     margin-top: 25px;
 }
 
+.reset__btn {
+    width: 100%;
+    margin: 25px auto 0;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ff0000;
+    background-color: #c02b2b;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+    display: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.reset__btn:hover {
+    box-shadow: 4px 3px 20px 8px rgba(227, 50, 50, 0.72);
+}
+
 footer span {
     text-align: center;
     font-size: 18px;
