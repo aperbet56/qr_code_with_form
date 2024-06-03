@@ -165,19 +165,18 @@ footer span {
         width: 100%;
     }
 
-    form {
+    form, input, .submit__btn {
         width: 100%
-    }
-
-    input {
-        width: 100%;
-    }
-
-    .submit__btn {
-        width: 100%;
     }
 
     .qr__code {
         margin: 60px auto 20px;
     }
+}
+
+@media  screen and (max-width: 375px) {
+    .qr__code {
+        margin: 60px 15px 20px 15px;
+    }
+    
 }
