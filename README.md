@@ -11,7 +11,7 @@ Mon objectif était de créer un QR code à partir d'un formulaire. Pour se fair
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/qr_code_with_form/
 
 ## Développez avec
 
