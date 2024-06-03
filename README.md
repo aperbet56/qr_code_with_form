@@ -1,6 +1,6 @@
 ## QR code à partir d'un formulaire
 
-## Challenge
+## Le challenge
 
 Mon objectif était de créer un QR code à partir d'un formulaire. Pour se faire :
 
@@ -9,7 +9,11 @@ Mon objectif était de créer un QR code à partir d'un formulaire. Pour se fair
 - L'utilisateur a également la possibilité de modifier les informations saisies. Lors de la nouvelle soumission du formulaire, les modifications sont bien prises en compte lors de la création du QR code.
 - Enfin au clic sur le bouton reset, une remise à zéro est opérée sur la page web.
 
-## Built with
+## Démonstration
+
+Lien vers le projet :
+
+## Développez avec
 
 - Utilisation de balises sémantiques (HTML5)
 - CSS
@@ -17,6 +21,8 @@ Mon objectif était de créer un QR code à partir d'un formulaire. Pour se fair
 - Animation CSS au focus sur les champs de formulaire
 - Animation CSS au hover (au survol de la souris) sur le bouton "soumettre" et le bouton "Reset"
 - Page web responsive
+- Desktop first
+- Utilisation d'un normaliseur : le fichier normalize.css
 - librairie qrious pour générer les QR codes
 - JavaScript
 - Commentaire JavaScript
