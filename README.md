@@ -1,5 +1,7 @@
 ## QR code à partir d'un formulaire
 
+![Design preview for the project](./img/preview.png)
+
 ## Le challenge
 
 Mon objectif était de créer un QR code à partir d'un formulaire. Pour se faire :
@@ -13,9 +15,9 @@ Mon objectif était de créer un QR code à partir d'un formulaire. Pour se fair
 
 Lien vers le projet : https://aperbet56.github.io/qr_code_with_form/
 
-## Développez avec
+## Projet développé avec
 
-- Utilisation de balises sémantiques (HTML5)
+- Utilisation de balises sémantiques HTML5
 - CSS
 - Flexbox
 - Animation CSS au focus sur les champs de formulaire
