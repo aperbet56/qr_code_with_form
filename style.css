@@ -1,9 +1,17 @@
+/**** Importation des polices Alan Sans ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
 /**** Reset ****/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+input,
+button {
     border: none;
     outline: none;
 }
@@ -16,11 +24,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: sans-serif;
-    background-color: #f4f4f4;
+    font-family: "Alan Sans", sans-serif;
+    background-color: #fffffe;
+    color: #00214d;
 }
 
-header, footer {
+header,
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,8 +55,8 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #008080; 
-    border-radius: 15px; 
+    border: 2px solid #00ebc7;
+    border-radius: 15px;
     padding: 35px;
     width: 850px;
     height: auto;
@@ -69,34 +79,33 @@ form {
 }
 
 input {
-    background-color: #f4f4f4;
+    background-color: #f2f4f6;
     width: 75%;
     padding: 15px;
     border-radius: 12px;
-    border: 2px solid #008080;
+
     font-size: 16px;
     transition: all 0.3s ease-in-out;
 }
 
 input:focus {
-    background-color: #008080;
-    color: #ffffff;
+    background-color: #00ebc7;
+    color: #00214d;
 }
 
 .input__box p {
     margin-top: 5px;
     font-size: 12px;
     font-weight: bold;
-    color: #ff0000;
+    color: #ff5470;
 }
 
 .submit__btn {
     width: 75%;
     padding: 15px;
-    border: 2px solid #008080;
     border-radius: 15px;
-    background-color: #25b1b1;
-    color: #ffffff;
+    background-color: #00ebc7;
+    color: #00214d;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
@@ -106,7 +115,7 @@ input:focus {
 }
 
 .submit__btn:hover {
-    box-shadow: 4px 3px 20px 8px rgba(50,227,185,0.72);
+    box-shadow: 4px 3px 20px 8px rgba(50, 227, 185, 0.72);
 }
 
 .information p {
@@ -115,10 +124,10 @@ input:focus {
 }
 
 .information .value {
-    color: #0000ff;
+    color: #fde24f;
 }
 
-.qr__code{
+.qr__code {
     font-size: 16px;
     margin-right: auto;
     width: 250px;
@@ -128,11 +137,10 @@ input:focus {
 
 .reset__btn {
     width: 100%;
-    margin: 25px auto 0;
+    margin: 30px auto 0;
     padding: 15px;
     text-align: center;
-    border: 1px solid #ff0000;
-    background-color: #c02b2b;
+    background-color: #ff5470;
     font-size: 16px;
     text-transform: uppercase;
     color: #ffffff;
@@ -156,7 +164,7 @@ footer span {
 
 @media screen and (max-width: 930px) {
     .main__content {
-     width: 90%;
+        width: 90%;
     }
 
     .form__qr-code {
@@ -165,7 +173,9 @@ footer span {
         width: 100%;
     }
 
-    form, input, .submit__btn {
+    form,
+    input,
+    .submit__btn {
         width: 100%
     }
 
