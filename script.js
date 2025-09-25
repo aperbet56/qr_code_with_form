@@ -116,6 +116,7 @@ const submit = () => {
       regexEmail.test(email.value) === false
     ) {
       alert("Veuillez remplir correctement les champs du formulaire !");
+      return;
     } else {
       qrCodeValue =
         firstName.value +
