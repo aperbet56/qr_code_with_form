@@ -6,6 +6,7 @@ const email = document.querySelector("#email");
 const submitBtn = document.querySelector(".submit__btn");
 const valueMessage = document.querySelector(".information").children[1];
 const resetBtn = document.querySelector(".reset__btn");
+const form = document.querySelector("form");
 
 // création de variables
 let qrCodeValue;
@@ -138,11 +139,8 @@ submit();
 
 // Déclaration de la fonction resetFormAndQr permettant une remise à zéro des inputs et du QR code
 const resetFormAndQr = () => {
+  form.reset();
   window.location.reload();
-  firstName.value = "";
-  lastName.value = "";
-  phoneNumber.value = "";
-  email.value = "";
 };
 
 // Eoute de l'événement "click" sur le bouton "Reset" et appel de la fonction resetFormQr
